@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
@@ -8,8 +8,43 @@
 		<title>Hello</title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 <body>
-    <h1>Hello {{ name }}</h1>
-    <a href="{{ url_for('test')}}">Link zum Test</a>
+ <header>
+        <nav>
+            <ul>
+                <li><a href="ausgaben.html">Ausgaben</a></li>
+                <li><a href="einahmen.html">Einahmen</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
+            </ul>
+        </nav>
+        </header>
+            <main>
+
+            </main>
+
+         <footer>
+
+            <ul>
+                <li>Noemi-Laura Schäfer</li>
+                <li>Löwenfeld 2A</li>
+                <li>8855 Wangen SZ</li>
+            </ul>
+            <div class="footer-sm">
+
+                 <a href="https://instagram.com/_noemilaura__?igshid=tahq3dhazkwh">
+                    <img src="../bilder/instagram.png" alt="Instagram">
+                 </a>
+                 <a href="https://www.facebook.com/noemilaura.schafer/">
+                    <img src="../bilder/facebook.png" alt="Facebook">
+                </a>
+                 <a href="https://www.linkedin.com/in/noemi-laura-sch%C3%A4fer-b444311b8">
+                    <img src="../builder/linkedin.png" alt="Linkedin">
+                </a>
+
+            </div>
+
+        </footer>
+
+
 
 </body>
 </html>
