@@ -1,0 +1,25 @@
+<!-- Quelle Footer: https://getbootstrap.com/docs/5.1/examples/headers/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <title>Financetracker</title>
+</head>
+
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">Logo</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Ausgaben</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Einahmen</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Analyse</a></li>
+      </ul>
+    </header>
+  </div>
+
+
