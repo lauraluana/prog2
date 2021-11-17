@@ -2,26 +2,52 @@
 <br><br><br><br>
     <div class="container text-center">
         <div class="row">
-            <div class="col-12">
-        <h1>Willkommen auf meiner Web-Applikation!</h1>
-                <br><br><br><br>
-            </div>
-            <div class="col-2"></div>
-            <div class="col-5">
-        <form method="POST">
-            <input type="text" name="datum" class="form-control" placeholder="Datum">
-            <input type="text" name="waehrung" class="form-control" placeholder="Währung">
-            <input type="text" name="betrag" class="form-control" placeholder="Betrag">
-            <input type="text" name="Kategorie" class="form-control" placeholder="Kategorie">
-        </form>
-            </div>
-            <br><br><br><br>
-            <div class="col-3">
-            <button type="submit" class="btn btn-outline">Senden</button>
-            </div>
-        </form>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+          <h1 class="display-4 font-italic">Willkommen auf meiner Web-Applikation</h1>
+          <p class="lead my-3">Diese Web-Applikation soll dazu dienen, meine Finanzen besser zu überwachen.</p>
+        </div>
+                <br><br>
+      </div>
+  <form class="row g-3">
+    <div class="form-group">
+        <label for="date">Datum</label>
+        <input type="date" id="date">
+    </div>
+      <br><br><br><br>
+    <div class="form-group col-md-4">
+      <select id="inputwaehrung" class="form-control">
+        <option selected>Währung</option>
+        <option>CHF</option>
+          <option>EUR</option>
+      </select>
+    </div>
+
+  <div class="form-group col-md-4">
+    <input type="text" class="form-control" id="inputbetrag" placeholder="Betrag">
+
+  </div>
+    <div class="form-group col-md-4">
+      <select id="inputkategorie" class="form-control">
+        <option selected>Kategorie</option>
+          <option>Shopping</option>
+        <option>Tanken</option>
+          <option>Lebensmittel</option>
+          <option>Freizeit</option>
+      </select>
+        <br><br>
+    </div>
+      <div class="col-12">
+  <button type="submit" class="btn btn-primary">Senden</button>
+             <br><br><br>
+      </div>
+  </form>
+
+      <div id="liveAlertPlaceholder"></div>
+            <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Vielen Dank!</h4>
+            <p>Die im Formular registrierte Ausgabe wurde erfolgreich gespeichert.</p>
         </div>
     </div>
-</div>
-
+    </div>
 {% include "footer.html" %}
