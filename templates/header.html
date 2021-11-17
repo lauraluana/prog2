@@ -6,20 +6,26 @@
     <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
     <title>Financetracker</title>
 </head>
-
-<div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <img src="/templates/Logo.jpg" alt="Logo" class="float-left">
-
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="ausgaben.html" class="nav-link active" aria-current="page">Ausgaben</a></li>
-        <li class="nav-item"><a href="einahmen.html" class="nav-link">Einahmen</a></li>
-        <li class="nav-item"><a href="analyse.html" class="nav-link">Analyse</a></li>
+<nav class="navbar navbar-expand-md navbar-dark float-right bg-dark">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+           <li>
+                <img src="{{url_for('static', filename='Logo.jpg')}}" width="50" >
+            </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Ausgaben</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Einahmen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Analyse</a>
+        </li>
       </ul>
-    </header>
+
   </div>
 
 
+</div>
+</nav>

@@ -34,3 +34,6 @@ def ausgaben_laden():
         datei_inhalt = {}
 
     return datei_inhalt
+
+#if shopping > 200:
+# print (shopping - 200, "sind unnötige Ausgaben)
