@@ -65,7 +65,6 @@ def einahmen_speichern(datum, waehrung, betrag, kategorie):
 
 
 # Laden des kompletten Inhaltes einer Datei.
-# Wird verwendet für die Approutes "Allepersonen" und "Allelogs".
 def alles(datei):
     with open(datei) as datei_name:
         json_as_string = datei_name.read()

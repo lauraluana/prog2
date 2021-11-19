@@ -1,10 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% include "header.html" %}
+<br><br><br><br>
+    <div class="container text-center">
+        <div class="row">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+          <h1 class="display-4 font-italic">Willkommen auf meiner Web-Applikation</h1>
+          <p class="lead my-3">Diese Web-Applikation soll dazu dienen, meine Finanzen besser zu überwachen.</p>
+                    <p class="lead my-3">Bitte gebe deine Einahmen ein!.</p>
+        </div>
+                <br><br>
+      </div>
+  <form action="{{url_for('einahmen')}}" method="post" class="row g-3">
+    <div class="form-group">
+        <label for="date">Datum</label>
+        <input type="date" id="date" name="datum_1">
+    </div>
+      <br><br><br><br>
+    <div class="form-group col-md-4">
+      <select id="inputwaehrung" name="waehrung_1" class="form-control">
+        <option selected>Währung</option>
+        <option>CHF</option>
+          <option>EUR</option>
+      </select>
+    </div>
 
-</body>
-</html>
+  <div class="form-group col-md-4">
+    <input type="text" class="form-control" id="inputbetrag" name="betrag_1" placeholder="Betrag">
+
+  </div>
+    <div class="form-group col-md-4">
+      <select id="inputkategorie" name="kategorie_1" class="form-control">
+        <option selected>Kategorie</option>
+          <option>Lohn</option>
+        <option>Geschenk</option>
+          <option>Rückzahlungen</option>
+      </select>
+        <br><br>
+    </div>
+      <div class="col-12">
+  <button type="submit" class="btn btn-primary">Senden</button>
+             <br><br><br><br><br><br>
+      </div>
+  </form>
+    </div>
+    </div>
+{% include "footer.html" %}

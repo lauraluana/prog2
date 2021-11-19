@@ -1,43 +1,38 @@
-from flask import Flask
+from flask import Flask, request
 from flask import render_template
-import daten
 
 app = Flask("Hello World")
 
 
-@app.route('/hello/')
+@app.route('/hello/', methods=['POST', 'GET'])
 def finanzen():
-    return render_template('index.html')
+    if request.method == 'POST':
+        datum = request.form.get("datum")
+        waehrung = request.form.get("waehrung")
+        betrag = request.form.get("betrag")
+        kategorie = request.form.get("kategorie")
+
+        return datum, waehrung, betrag, kategorie
+    else:
+        return render_template('index.html')
 
 
-@app.route("/speichern/<ausgaben>")
-def speichern(ausgaben):
-    zeitpunkt, ausgaben = daten.ausgaben_speichern(ausgaben)
+@app.route('/einahmen/')
+def einahmen():
+    if request.method == 'POST':
+        datum_1 = request.form.get("datum_1")
+        waehrung_1 = request.form.get("waehrung_1")
+        betrag_1 = request.form.get("betrag_1")
+        kategorie_1 = request.form.get("kategorie_1")
 
-    return "Gespeichert: " + ausgaben + " um " + str(zeitpunkt)
+        return datum_1, waehrung_1, betrag_1, kategorie_1
+    else:
+        return render_template('einahmen.html')
 
 
-@app.route("/liste")
-def auflisten():
-    ausgaben = daten.ausgaben_laden()
-
-    ausgaben_liste = ""
-    for key, value in ausgaben.items():
-        zeile = str(key) + ": " + value + "<br>"
-        ausgaben_liste += zeile
-
-    return ausgaben_liste
-
-def ausgaben_laden():
-    datei_name = "aktivitaeten.json"
-
-    try:
-        with open(datei_name) as open_file:
-            datei_inhalt = json.load(open_file)
-    except FileNotFoundError:
-        datei_inhalt = {}
-
-    return datei_inhalt
+@app.route('/analyse/')
+def analyse():
+    return render_template('analyse.html')
 
 
 if __name__ == '__main__':

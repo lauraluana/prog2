@@ -14,13 +14,13 @@
                 <img src="{{url_for('static', filename='Logo.jpg')}}" width="50" >
             </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Ausgaben</a>
+          <a class="nav-link active" aria-current="page" href={{url_for("finanzen")}}>Ausgaben</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Einahmen</a>
+          <a class="nav-link" aria-current="page" href={{url_for("einahmen")}}>Einahmen</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Analyse</a>
+          <a class="nav-link" aria-current="page" href={{url_for("analyse")}}>Analyse</a>
         </li>
       </ul>
 

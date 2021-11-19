@@ -6,17 +6,18 @@
                 <div class="container">
           <h1 class="display-4 font-italic">Willkommen auf meiner Web-Applikation</h1>
           <p class="lead my-3">Diese Web-Applikation soll dazu dienen, meine Finanzen besser zu überwachen.</p>
+                    <p class="lead my-3">Bitte gebe deine Ausgaben ein.</p>
         </div>
                 <br><br>
       </div>
-  <form class="row g-3">
+  <form action="{{url_for('finanzen')}}" method="post" class="row g-3">
     <div class="form-group">
         <label for="date">Datum</label>
-        <input type="date" id="date">
+        <input type="date" id="date" name="datum">
     </div>
       <br><br><br><br>
     <div class="form-group col-md-4">
-      <select id="inputwaehrung" class="form-control">
+      <select id="inputwaehrung" name="waehrung" class="form-control">
         <option selected>Währung</option>
         <option>CHF</option>
           <option>EUR</option>
@@ -24,11 +25,11 @@
     </div>
 
   <div class="form-group col-md-4">
-    <input type="text" class="form-control" id="inputbetrag" placeholder="Betrag">
+    <input type="text" class="form-control" id="inputbetrag" name="betrag" placeholder="Betrag">
 
   </div>
     <div class="form-group col-md-4">
-      <select id="inputkategorie" class="form-control">
+      <select id="inputkategorie" name="kategorie" class="form-control">
         <option selected>Kategorie</option>
           <option>Shopping</option>
         <option>Tanken</option>
@@ -39,7 +40,7 @@
     </div>
       <div class="col-12">
   <button type="submit" class="btn btn-primary">Senden</button>
-             <br><br><br>
+             <br><br><br><br>
       </div>
   </form>
 
