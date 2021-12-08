@@ -12,7 +12,7 @@ def finanzen():
         betrag = request.form.get("betrag")
         kategorie = request.form.get("kategorie")
 
-        return datum, waehrung, betrag, kategorie
+        return render_template('erfasst.html', datum=datum, waehrung=waehrung, betrag=betrag, kategorie=kategorie)
     else:
         return render_template('index.html')
 
@@ -25,7 +25,8 @@ def einahmen():
         betrag_1 = request.form.get("betrag_1")
         kategorie_1 = request.form.get("kategorie_1")
 
-        return datum_1, waehrung_1, betrag_1, kategorie_1
+        return render_template('erfasst_1.html', datum=datum_1, waehrung=waehrung_1, betrag=betrag_1,
+                               kategorie=kategorie_1)
     else:
         return render_template('einahmen.html')
 
