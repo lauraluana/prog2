@@ -1,0 +1,20 @@
+[
+    {
+        "Datum": "2021-12-10",
+        "Waehrung": "CHF",
+        "Betrag": "12",
+        "Kategorie": "Shopping"
+    },
+    {
+        "Datum": "2021-12-10",
+        "Waehrung": "CHF",
+        "Betrag": "12",
+        "Kategorie": "Shopping"
+    },
+    {
+        "Datum": "2021-12-27",
+        "Waehrung": "CHF",
+        "Betrag": "20",
+        "Kategorie": "Tanken"
+    }
+]

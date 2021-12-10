@@ -1,5 +1,6 @@
 from flask import Flask, request
 from flask import render_template
+import daten
 
 app = Flask("Hello World")
 
@@ -7,12 +8,13 @@ app = Flask("Hello World")
 @app.route('/hello/', methods=['POST', 'GET'])
 def finanzen():
     if request.method == 'POST':
-        datum = request.form.get("datum")
+        date = request.form.get("datum")
         waehrung = request.form.get("waehrung")
         betrag = request.form.get("betrag")
         kategorie = request.form.get("kategorie")
-
-        return render_template('erfasst.html', datum=datum, waehrung=waehrung, betrag=betrag, kategorie=kategorie)
+        daten.speichern("ausgaben.json", date, waehrung, betrag, kategorie)
+        return render_template('erfasst.html', titel="Ausgaben", datum=date, waehrung=waehrung, betrag=betrag,
+                               kategorie=kategorie)
     else:
         return render_template('index.html')
 
@@ -20,13 +22,13 @@ def finanzen():
 @app.route('/einahmen/')
 def einahmen():
     if request.method == 'POST':
-        datum_1 = request.form.get("datum_1")
-        waehrung_1 = request.form.get("waehrung_1")
-        betrag_1 = request.form.get("betrag_1")
-        kategorie_1 = request.form.get("kategorie_1")
-
-        return render_template('erfasst_1.html', datum=datum_1, waehrung=waehrung_1, betrag=betrag_1,
-                               kategorie=kategorie_1)
+        datum = request.form.get("datum")
+        waehrung = request.form.get("waehrung")
+        betrag = request.form.get("betrag")
+        kategorie = request.form.get("kategorie")
+        daten.speichern("einnahmen.json", datum, waehrung, betrag, kategorie)
+        return render_template('erfasst.html', titel="Einnahmen", datum=datum, waehrung=waehrung, betrag=betrag,
+                               kategorie=kategorie)
     else:
         return render_template('einahmen.html')
 
