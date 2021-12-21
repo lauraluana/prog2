@@ -6,15 +6,33 @@
         "Kategorie": "Shopping"
     },
     {
-        "Datum": "2021-12-10",
+        "Datum": "2021-12-11",
         "Waehrung": "CHF",
-        "Betrag": "12",
+        "Betrag": "18",
         "Kategorie": "Shopping"
     },
     {
         "Datum": "2021-12-27",
         "Waehrung": "CHF",
         "Betrag": "20",
+        "Kategorie": "Tanken"
+    },
+    {
+        "Datum": "2021-12-21",
+        "Waehrung": "CHF",
+        "Betrag": "30",
+        "Kategorie": "Lebensmittel"
+    },
+    {
+        "Datum": "2021-12-17",
+        "Waehrung": "CHF",
+        "Betrag": "267",
+        "Kategorie": "Freizeit"
+    },
+    {
+        "Datum": "2021-12-21",
+        "Waehrung": "CHF",
+        "Betrag": "50",
         "Kategorie": "Tanken"
     }
 ]
