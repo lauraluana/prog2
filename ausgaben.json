@@ -1,38 +1,56 @@
 [
     {
-        "Datum": "2021-12-10",
+        "Datum": "2021-11-10",
         "Waehrung": "CHF",
-        "Betrag": "12",
-        "Kategorie": "Shopping"
-    },
-    {
-        "Datum": "2021-12-11",
-        "Waehrung": "CHF",
-        "Betrag": "18",
-        "Kategorie": "Shopping"
-    },
-    {
-        "Datum": "2021-12-27",
-        "Waehrung": "CHF",
-        "Betrag": "20",
-        "Kategorie": "Tanken"
-    },
-    {
-        "Datum": "2021-12-21",
-        "Waehrung": "CHF",
-        "Betrag": "30",
-        "Kategorie": "Lebensmittel"
-    },
-    {
-        "Datum": "2021-12-17",
-        "Waehrung": "CHF",
-        "Betrag": "267",
+        "Betrag": "267.35",
         "Kategorie": "Freizeit"
     },
     {
-        "Datum": "2021-12-21",
+        "Datum": "2021-11-17",
         "Waehrung": "CHF",
-        "Betrag": "50",
-        "Kategorie": "Tanken"
+        "Betrag": "975.00",
+        "Kategorie": "Shopping"
+    },
+    {
+        "Datum": "2021-11-22",
+        "Waehrung": "CHF",
+        "Betrag": "2.00",
+        "Kategorie": "Lebensmittel"
+    },
+    {
+        "Datum": "2021-11-23",
+        "Waehrung": "CHF",
+        "Betrag": "15.90",
+        "Kategorie": "Lebensmittel"
+    },
+    {
+        "Datum": "2021-11-29",
+        "Waehrung": "CHF",
+        "Betrag": "79.90",
+        "Kategorie": "Shopping"
+    },
+    {
+        "Datum": "2021-11-29",
+        "Waehrung": "CHF",
+        "Betrag": "119.50",
+        "Kategorie": "Shopping"
+    },
+    {
+        "Datum": "2021-12-07",
+        "Waehrung": "CHF",
+        "Betrag": "12.05",
+        "Kategorie": "Lebensmittel"
+    },
+    {
+        "Datum": "2021-12-10",
+        "Waehrung": "CHF",
+        "Betrag": "267.35",
+        "Kategorie": "Freizeit"
+    },
+    {
+        "Datum": "2021-12-20",
+        "Waehrung": "CHF",
+        "Betrag": "14.20",
+        "Kategorie": "Lebensmittel"
     }
 ]

@@ -1,6 +1,8 @@
 from flask import Flask, request
 from flask import render_template
 import daten
+import analyse
+import matplotlib.pyplot as plt
 
 app = Flask("Hello World")
 
@@ -19,7 +21,7 @@ def finanzen():
         return render_template('index.html')
 
 
-@app.route('/einahmen/')
+@app.route('/einahmen/', methods=['POST', 'GET'])
 def einahmen():
     if request.method == 'POST':
         datum = request.form.get("datum")
@@ -33,8 +35,10 @@ def einahmen():
         return render_template('einahmen.html')
 
 
-@app.route('/analyse/')
-def analyse():
+@app.route('/analyse/', methods=['POST', 'GET'])
+def viz():
+    if request.method == 'POST':
+        kategorie = request.form.get("kategorie")
     return render_template('analyse.html')
 
 
