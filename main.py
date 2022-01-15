@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask import render_template
 import daten
 import analyse
-import reserve
+import json
 from plotly.offline import plot
 
 app = Flask("Hello World")
@@ -60,9 +60,17 @@ def viz():
 
 
 @app.route('/liste/')
-def liste_laden():
-    reserve.main(r'ausgaben.json')
-    return render_template('liste.html', name=False)
+def rechnen():
+    with open('ausgaben.json') as openfile:
+        daten = json.load(openfile)
+
+        liste = []
+
+        for summe in daten:
+            if summe['Kategorie'] == "Lebensmittel":
+                liste.append(float(summe['Betrag']))
+        myliste = sum(liste)
+    return render_template('liste.html', name=myliste)
 
 
 if __name__ == '__main__':
