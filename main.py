@@ -2,8 +2,7 @@ from flask import Flask, request
 from flask import render_template
 import daten
 import analyse
-import übersicht
-import plotly.express as px
+import reserve
 from plotly.offline import plot
 
 app = Flask("Hello World")
@@ -60,11 +59,10 @@ def viz():
     return render_template('analyse.html', viz_div=False)
 
 
-@app.route('/liste/', methods=['GET'])
+@app.route('/liste/')
 def liste_laden():
-    übersicht.sachen_laden("ausgaben.json")
-    return render_template("liste.html")
-
+    reserve.main(r'ausgaben.json')
+    return render_template('liste.html', name=False)
 
 
 if __name__ == '__main__':

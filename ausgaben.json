@@ -1,8 +1,1 @@
-[
-    {
-        "Datum": "2022-01-15",
-        "Waehrung": "CHF",
-        "Betrag": "20",
-        "Kategorie": "Tanken"
-    }
-]
+{"Datum":{"0":"2022-01-05"},"Waehrung":{"0":"CHF"},"Betrag":{"0":10},"Kategorie":{"0":"Shopping"}}
