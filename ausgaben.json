@@ -52,5 +52,11 @@
         "Waehrung": "CHF",
         "Betrag": "14.20",
         "Kategorie": "Lebensmittel"
+    },
+    {
+        "Datum": "2022-01-20",
+        "Waehrung": "CHF",
+        "Betrag": "30",
+        "Kategorie": "Tanken"
     }
 ]

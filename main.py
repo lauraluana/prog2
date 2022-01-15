@@ -60,14 +60,14 @@ def viz():
 
 
 @app.route('/liste/')
-def rechnen():
+def liste_laden():
     with open('ausgaben.json') as openfile:
         daten = json.load(openfile)
 
         liste = []
 
         for summe in daten:
-            if summe['Kategorie'] == "Lebensmittel":
+            if summe['Kategorie'] == "Shopping":
                 liste.append(float(summe['Betrag']))
         myliste = sum(liste)
     return render_template('liste.html', name=myliste)
