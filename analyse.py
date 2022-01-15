@@ -1,23 +1,30 @@
 import json
-import matplotlib.pyplot as plt
 
-with open('ausgaben.json') as openfile:
-    daten = json.load(openfile)
+import plotly.express as px
 
-xwerte = []
-ywerte = []
 
-for eintrag in daten:
-    if eintrag['Kategorie'] == 'Lebensmittel':
-        xwerte.append(eintrag['Datum'])
-        ywerte.append(float(eintrag['Betrag']))
+def diagram(abfrage):
+    with open('ausgaben.json') as openfile:
+        daten = json.load(openfile)
 
-plt.bar(xwerte, ywerte, color='#557f2d')
-plt.style.use('seaborn-darkgrid')
-palette = plt.get_cmap('Set1')
+    xwerte = []
+    ywerte = []
 
-plt.title("Übersicht CHF Ausgaben", loc='center', fontsize=12, fontweight=0, color='black')
-plt.xlabel("Datum")
-plt.ylabel("Betrag")
+    for eintrag in daten:
+        if eintrag['Kategorie'] == abfrage:
+            xwerte.append(eintrag['Datum'])
+            ywerte.append(float(eintrag['Betrag']))
 
-plt.show()
+    fig = px.bar(xwerte, ywerte)
+
+def rechnen(abfrage):
+    with open('ausgaben.json') as openfile:
+        daten = json.load(openfile)
+
+    liste = []
+
+    for summe in daten:
+        if summe['Kategorie'] == abfrage:
+            liste.append(float(summe['Betrag']))
+    myliste = sum(liste)
+    return myliste

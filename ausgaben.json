@@ -1,56 +1,8 @@
 [
     {
-        "Datum": "2021-11-10",
+        "Datum": "2022-01-15",
         "Waehrung": "CHF",
-        "Betrag": "267.35",
-        "Kategorie": "Freizeit"
-    },
-    {
-        "Datum": "2021-11-17",
-        "Waehrung": "CHF",
-        "Betrag": "975.00",
-        "Kategorie": "Shopping"
-    },
-    {
-        "Datum": "2021-11-22",
-        "Waehrung": "CHF",
-        "Betrag": "2.00",
-        "Kategorie": "Lebensmittel"
-    },
-    {
-        "Datum": "2021-11-23",
-        "Waehrung": "CHF",
-        "Betrag": "15.90",
-        "Kategorie": "Lebensmittel"
-    },
-    {
-        "Datum": "2021-11-29",
-        "Waehrung": "CHF",
-        "Betrag": "79.90",
-        "Kategorie": "Shopping"
-    },
-    {
-        "Datum": "2021-11-29",
-        "Waehrung": "CHF",
-        "Betrag": "119.50",
-        "Kategorie": "Shopping"
-    },
-    {
-        "Datum": "2021-12-07",
-        "Waehrung": "CHF",
-        "Betrag": "12.05",
-        "Kategorie": "Lebensmittel"
-    },
-    {
-        "Datum": "2021-12-10",
-        "Waehrung": "CHF",
-        "Betrag": "267.35",
-        "Kategorie": "Freizeit"
-    },
-    {
-        "Datum": "2021-12-20",
-        "Waehrung": "CHF",
-        "Betrag": "14.20",
-        "Kategorie": "Lebensmittel"
+        "Betrag": "20",
+        "Kategorie": "Tanken"
     }
 ]
