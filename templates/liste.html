@@ -1,13 +1,19 @@
 {% include "header.html" %}
 <br><br><br><br>
+<!--Der Aufbau der html-Seiten ist immer gleich-->
     <div class="container text-center">
         <div class="row">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
           <h1 class="display-4 font-italic">Willkommen zur Liste</h1>
+                    <!--Die Summe der Kategorie "Shopping" wird hier ausgegeben-->
           <p class="lead my-3">Die Summe aller Ausgaben im Bereich Shopping sind: CHF {{ name }}.</p>
-
-
+                     <!--Die Summe der Kategorie "Tanken" wird hier ausgegeben-->
+          <p class="lead my-3">Die Summe aller Ausgaben im Bereich Tanken sind: CHF {{ name1 }}.</p>
+                     <!--Die Summe der Kategorie "Lebensmittel" wird hier ausgegeben-->
+          <p class="lead my-3">Die Summe aller Ausgaben im Bereich Lebensmittel sind: CHF {{ name2 }}.</p>
+                     <!--Die Summe der Kategorie "Freizeit" wird hier ausgegeben-->
+          <p class="lead my-3">Die Summe aller Ausgaben im Bereich Freizeit sind: CHF {{ name3 }}.</p>
                 </div>
         </div>
                 <br><br>

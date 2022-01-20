@@ -1,1 +1,8 @@
-[]
+[
+   {
+        "Datum": "2021-11-25",
+        "Waehrung": "CHF",
+        "Betrag": "1400",
+        "Kategorie": "Freizeit"
+    }
+]

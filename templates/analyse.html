@@ -8,8 +8,10 @@
         </div>
                 <br><br>
       </div>
+            <!--Verlinkung zur Funktion "viz" in der main.py-->
   <form action="{{url_for('viz')}}" method="post" class="row g-3">
     <div class="form-group">
+        <!--Die Kategorie wird ausgewählt, durch ein Dropdown-Menü-->
       <select id="inputkategorie" name="kategorie" class="form-control">
         <option selected>Kategorie</option>
           <option>Shopping</option>
@@ -24,10 +26,7 @@
              <br><br><br><br>
       </div>
   </form>
+            <!--Hier müsste das Diagramm dargestellt werden, jedoch habe ich nicht geschafft-->
              {{ viz_div }}
-            <div class="container">
-          <p class="lead my-3">Die Summe der Ausgaben ist: {{ myliste }} .</p>
-                <br><br><br><br>
-        </div>
     </div>
     </div>

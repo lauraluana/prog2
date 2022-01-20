@@ -1,3 +1,4 @@
+<!--Der Header wurde einzel erstellt, so das Änderungen einfacher zu machen sind-->
 {% include "header.html" %}
 <br><br><br><br>
     <div class="container text-center">
@@ -10,12 +11,16 @@
         </div>
                 <br><br>
       </div>
+            <!--Verlinkung zur Funktion "finanzen" in main.py-->
   <form action="{{url_for('finanzen')}}" method="post" class="row g-3">
     <div class="form-group">
+        <!--Hier kann das Datum ausgesucht werden, an dem eine Ausgabe betätigt wurde-->
         <label for="date">Datum</label>
         <input type="date" id="date" name="datum">
     </div>
       <br><br><br><br>
+      <!--An diesem Punkt muss die entsprechende Währung ausgesucht werden
+      Quelle für Dropdowns:https://getbootstrap.com/docs/5.1/forms/select/-->
     <div class="form-group col-md-4">
       <select id="inputwaehrung" name="waehrung" class="form-control">
         <option selected>Währung</option>
@@ -23,11 +28,13 @@
           <option>EUR</option>
       </select>
     </div>
-
+<!--Der entsprechende Betrag wird eingegeben
+Quelle:https://getbootstrap.com/docs/5.1/components/dropdowns/  Absatz Forms-->
   <div class="form-group col-md-4">
     <input type="text" class="form-control" id="inputbetrag" name="betrag" placeholder="Betrag">
 
   </div>
+<!--Die passende Kategorie wird ausgesucht, kann beliebig erweitert werden-->
     <div class="form-group col-md-4">
       <select id="inputkategorie" name="kategorie" class="form-control">
         <option selected>Kategorie</option>
@@ -38,17 +45,13 @@
       </select>
         <br><br>
     </div>
+      <!--Die Eingaben werden gesendet-->
       <div class="col-12">
   <button type="submit" class="btn btn-primary">Senden</button>
              <br><br><br><br>
       </div>
   </form>
-
-     <!-- <div id="liveAlertPlaceholder"></div>
-            <div class="alert alert-success" role="alert">
-            <h4 class="alert-heading">Vielen Dank!</h4>
-            <p>Die im Formular registrierte Ausgabe wurde erfolgreich gespeichert.</p>
-        </div>-->
     </div>
     </div>
+<!--Der Footer wurde einzel erstellt, so das Änderungen einfacher zu machen sind-->
 {% include "footer.html" %}
