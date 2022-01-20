@@ -5,9 +5,9 @@ Als Student hat man oftmals nicht ein hohes Einkommen, ausser man ist schon Unte
 Um meine Finanzen besser zu verwalten, wäre es schön eine Applikation zu haben, wo alle Ausgaben festgehalten werden. 
 ## Workflow
 ### Dateieingabe
-Jeden Tag, wo ich Ausgaben tätige, sollen die Ausgaben in die Applikation erfasst werden. Zusätzlich sollen die **Ausgaben in Kategorien** eingeteilt werden, wie zum Beispiel *(Lebensmittel, Shopping, Tabak, Tanken, etc.)*.
+Jeden Tag, wo ich Ausgaben tätige, sollen die Ausgaben in die Applikation erfasst werden. Zusätzlich sollen die **Ausgaben in Kategorien** eingeteilt werden, wie zum Beispiel *(Lebensmittel, Shopping, Freizeit, Tanken)*.
 
-Nebst der **Währung** und **Betrag** der Ausgabe, soll auch das **Datum** erfasst werden, dass die Auswertung nach Datum gefiltert zu einem späteren Zeitpunkt eingebaut werden könnte. Ausserdem soll man auch Einahmen erfassen können.
+Nebst der **Währung** und **Betrag** der Ausgabe, soll auch das **Datum** erfasst werden, so dass die Auswertung zu einem späteren Zeitpunkt nach Datum gefiltert werden könnte. Ausserdem soll man auch Einahmen erfassen können.
 
 ![This is an image](/static/diagram1.jpg)
 ### Datenausgabe
