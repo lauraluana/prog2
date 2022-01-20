@@ -11,11 +11,11 @@ Nebst der **Währung** und **Betrag** der Ausgabe, soll auch das **Datum** erfas
 
 ![This is an image](/static/diagram1.jpg)
 ### Datenausgabe
-Nach der Eingabe, werden die Daten an den Nutzer auf einer separaten Seite zurückgespielt. Des weiteren gibt es eine Seite namens Analyse, wo man anhand der Kategorie ein Balkendiagramm mit allen Ausgaben *(X-Achse = Datum, Y-Achse = Betrag)* erhaltet.
+Nach der Eingabe, werden die Daten an den Nutzer auf einer separaten Seite zurückgespielt. Des weiteren gibt es eine Seite namens Analyse, wo man anhand der Kategorie ein Balkendiagramm mit allen Ausgaben *(X-Achse = Datum, Y-Achse = Betrag)* erhält.
 
 ![This is an image](/static/diagram2.jpg)
 
-Zusätzlich wird auf der Seite Summe die **Summe aller Beträge der Kategorie "Shopping"** angezeigt. Dazu wurde ein Funktion erstellt, die alle Beträge der Kategorie "Shoppig" aus der Datei **ausgaben.json** liest.
+Zusätzlich wird auf der Seite Summe die **Summen aller Beträge der jeweiligen Kategorie** angezeigt. Dazu wurde ein Funktion erstellt, die alle Beträge der jeweiligen Kategorie aus der Datei **ausgaben.json** liest.
 ## Bedienung
 Zur Verwendung der Applikation muss die **main.py** Datei gestarten werden.
 

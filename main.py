@@ -71,6 +71,9 @@ def liste_laden():
         daten = json.load(openfile)
         # Die Liste ist zuerst leer, da die gewünschten Daten zuerst gefiltert werden müssen
         liste = []
+        liste1 = []
+        liste2 = []
+        liste3 = []
 
         for summe in daten:
             # Wenn die Kategorie = Shopping ist, wird die If Schleife ausgeführt.
@@ -84,25 +87,25 @@ def liste_laden():
             # Wenn die Kategorie = Shopping ist, wird die If Schleife ausgeführt.
             if summe['Kategorie'] == "Tanken":
                 # Alle Beträge die zur Kategorie "Tanken" gehören, werden in die Liste aufgenommen
-                liste.append(float(summe['Betrag']))
+                liste1.append(float(summe['Betrag']))
                 # Alle Beträge werden mit dem Befehl "sum" zusammengezählt
-        mytank = sum(liste)
+        mytank = sum(liste1)
 
         for summe in daten:
             # Wenn die Kategorie = Shopping ist, wird die If Schleife ausgeführt.
             if summe['Kategorie'] == "Lebensmittel":
                 # Alle Beträge die zur Kategorie "Lebensmittel" gehören, werden in die Liste aufgenommen
-                liste.append(float(summe['Betrag']))
+                liste2.append(float(summe['Betrag']))
                 # Alle Beträge werden mit dem Befehl "sum" zusammengezählt
-        mylebmi = sum(liste)
+        mylebmi = sum(liste2)
 
         for summe in daten:
             # Wenn die Kategorie = Shopping ist, wird die If Schleife ausgeführt.
             if summe['Kategorie'] == "Freizeit":
                 # Alle Beträge die zur Kategorie "Freizeit" gehören, werden in die Liste aufgenommen
-                liste.append(float(summe['Betrag']))
+                liste3.append(float(summe['Betrag']))
                 # Alle Beträge werden mit dem Befehl "sum" zusammengezählt
-        myliste = sum(liste)
+        myliste = sum(liste3)
 
         # Die Summe der Liste erscheint im HTML "Liste"
     return render_template('liste.html', name=myshop, name1=mytank, name2=mylebmi, name3=myliste)
